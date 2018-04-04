@@ -1,0 +1,26 @@
+{
+  "name": "prometheusmirror",
+  "version": "1.0.0",
+  "description": "accepts metrics through POST endpoint and exposes them to /metrics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danielv123/prometheusMirror.git"
+  },
+  "keywords": [
+    "prometheus"
+  ],
+  "author": "Daniel Vestøl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Danielv123/prometheusMirror/issues"
+  },
+  "homepage": "https://github.com/Danielv123/prometheusMirror#readme",
+  "dependencies": {
+    "prom-client": "^11.0.0",
+    "query-string": "^6.0.0"
+  }
+}
