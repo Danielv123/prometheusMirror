@@ -30,7 +30,7 @@ http.createServer(function (req, res) {
 						labelNames: body.labelNames,
 					});
 				}
-				gauges[body.name].inc(body.value);
+				gauges[body.name].set(body.value);
 			}
 		});
 		res.writeHead(200, {'Content-Type': 'text/html'});
