@@ -39,4 +39,4 @@ http.createServer(function (req, res) {
 		console.log("GET");
 		res.end(Prometheus.register.metrics());
 	}
-}).listen(8050); //the server object listens on port 8080
+}).listen(8053); //the server object listens on port 8053
