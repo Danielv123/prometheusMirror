@@ -22,6 +22,7 @@ http.createServer(function (req, res) {
 			body = queryString.parse(body);
 			console.log("Body: " + JSON.stringify(body));
 			if(body.name && body.value){
+				body.value = Number(body.value);
 				if(!Array.isArray(body.labelNames)) body.labelNames = [];
 				if(!gauges[body.name]){
 					gauges[body.name] = new Prometheus.Gauge({
